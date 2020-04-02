@@ -34,7 +34,7 @@ function draw() {
      background(255);
      textSize(26);
       textAlign(CENTER, CENTER);
-      text("end | you did an excellent job!", width/2, height/2);
+      text("all completed! | you did an amazing job!", width/2, height/2);
       text("level "+(num-1), width/2, height/2 +50);
     flag = 1;
     //remove();
