@@ -8,7 +8,8 @@ var flag;
 function setup() 
 {
   noStroke();
-  let myCanvas = createCanvas(500, 500);
+  s = (window.innerWidth > 500) ? 500 : window.innerWidth;
+  var myCanvas = createCanvas(s, s);
   myCanvas.parent('theCanvas');
   c1 = color(255, 190, 200);
   c2 = color(30, 190, 255);
@@ -17,7 +18,6 @@ function setup()
   num = 2;
   i = 1;
   range = 90;
-  s = 500;
   flag = 0;
 }
 
@@ -79,4 +79,8 @@ function blocks () {
    }
    fill(c2);
    rect(1 + m * s / num, 1 + n * s / num, s /num - 2, s / num - 2);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
