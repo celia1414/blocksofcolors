@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>++ random color block ++</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="p5ColorGame.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <!-- This line removes any default padding and style.
+       You might only need one of these values set. -->
+  <style> 
+<!-- body { padding: 0; margin: 0; } -->
+    body {
+     font-family: monospace; 
+     color: grey;
+    }
+    p {
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    #header {
+      text-align: center;
+      margin: 15px;
+      padding: 40px;
+      border: 3px solid grey;
+    }
+
+    #theCanvas {
+     padding: 0px;
+    }
+    #footer {
+      background-color: #f1f1f1;
+      margin: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+    .left {
+      float: left;
+      background-color: grey;
+      height: 500px;
+    }
+    #centerbox {
+     margin: auto; 
+     width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>++ random color block game ++</h1>
+    <p>click on the block with different color</p>
+  </div>
+<!--  <div class="left"></div>-->
+  <div id="centerbox">
+  <div id="theCanvas"></div>
+  </div>
+  <div id="footer">
+    <p>-- built by Célia with P5 --</p>
+  </div>
+</body>
+</html>
