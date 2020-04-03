@@ -1,0 +1,160 @@
+<html>
+<head>
+ <link rel="shortcut icon" href="startheicon.ico"/>
+  <title>computer graphics | dancing stars</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="p5StarTest.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <!-- This line removes any default padding and style.
+       You might only need one of these values set. -->
+  <style>
+    * {
+        box-sizing: border-box;
+      }
+
+body {
+  font-family: monospace;
+  color: grey;
+}
+
+p, ul {
+      font-size: 18px;
+    }
+h1 {
+      font-size: 38px;
+    }
+
+/* Style the header */
+#header {
+  border: 3px solid grey;
+  margin: 15px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side1 {
+/*  background-color: rgb(249, 242, 228); */
+  width: 100%;
+  border: 2px solid #f1f1f1;
+  font-size: 10px;
+  padding: 15px;
+}
+.column.side2 {
+/*  background-color: rgb(249, 242, 228); */
+  width: 25%;
+  border: 2px solid #f1f1f1;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+/* Middle column */
+.column.middle {
+  width: 75%;
+  border: 2px solid #f1f1f1;
+}
+
+#theCanvas {
+ border: none;
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+#theButtons {
+  padding: 1px;
+  margin: auto;
+}
+button {
+  margin: 6px;
+  padding: 8px;
+  width: 100%;
+  font-family: monospace;
+  font-size: 17px;
+  background-color: rgb(70, 220, 225);
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: teal;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:active {
+ border: 1px solid white; 
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  margin: 15px;
+}
+
+
+@media (max-width: 730px) {
+  .column.side2, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body oncontextmenu="return false;">
+<div id="header">
+    <h1>++ dancing stars ++</h1>
+    <p>create gorgeous 2D graphics with a few clicks :)</p>
+  </div>
+
+
+  <div class="column side1">
+  <p>for visitors with keyboards:</p>
+  <ul>
+  <li>mouse press to ease the stars</li>
+  <li>press 's' to screenshot (.tif)</li>
+  <li>press 'p' to screenshot (.png)</li>
+  <li>press 'LEFT' and  'RIGHT' to get the stars rotate</li>
+  <li>press 'UP' and 'DOWN' to stop the rotation</li>
+  <li>press 'BLANKSPACE' to reset canvas</li>
+  </ul>                     
+  </div>
+ <div class="row">
+  <div class="column middle">
+  <div id='theCanvas'></div>
+  </div>
+  <div class="column side2">
+  <p>otherwise, one may click on the operation buttons...</p>
+  <p>operations:</p>
+  <div id="theButtons"></div>
+  </div>
+</div>
+
+  <div id="footer">
+    <p>designed + built by Célia with P5</p>
+  </div>
+</body>
+</html>
