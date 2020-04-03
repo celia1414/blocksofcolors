@@ -19,8 +19,10 @@ function setup() {
   stroke(255);
   background(249, 242, 228);
   
+  let scale = (window.innerWidth < 730) ? ((window,innerWidth - 30) / 280) : 2.5;
+  
   for (let i = 0; i < 20; i++) {
-     stars[i] = new Star(c1, random(30, width - 30), random(30, height - 30), 5, (window.innerWidth-30)/70 + 2.5 * i);  
+     stars[i] = new Star(c1, random(30, width - 30), random(30, height - 30), 5, (window.innerWidth - 30) / 75 + scale * i);  
   }
   
   button_s = createButton('save (tif)');
