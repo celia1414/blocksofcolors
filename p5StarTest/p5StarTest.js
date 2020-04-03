@@ -4,6 +4,7 @@ let flag1;
 let s;
 let button_up, button_right, button_left;
 let button_s, button_p, button_clear;
+let scale_v;
 
 function setup() {
   c1 = color(243, 244, 129);
@@ -20,6 +21,7 @@ function setup() {
   background(249, 242, 228);
   
   let scale = (window.innerWidth < 730) ? ((window,innerWidth - 30) / 280) : 2.5;
+  scale_v = (window.innerWidth - 30) / 140;
   
   for (let i = 0; i < 20; i++) {
      stars[i] = new Star(c1, random(30, width - 30), random(30, height - 30), 5, (window.innerWidth - 30) / 75 + scale * i);  
@@ -155,8 +157,8 @@ class Star {
   }
   
   moving() {
-    if (this.velocity.x > 5) this.velocity.x = 1;
-    if (this.velocity.y > 5) this.velocity.y = 1;
+    if (this.velocity.x > scale_v) this.velocity.x = 1;
+    if (this.velocity.y > scale_v) this.velocity.y = 1;
     this.velocity.add(this.acceleration);
     this.position.add(this.velocity);
     if (this.position.x < this.r || this.position.x > width - this.r) this.velocity.x *= random(-1.2, -0.8);
