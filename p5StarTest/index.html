@@ -31,10 +31,20 @@ h1 {
 
 /* Style the header */
 #header {
-  border: 3px solid grey;
-  margin: 15px;
+  border: none;
   padding: 40px;
   text-align: center;
+  background-image: url("background.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin: 15px;
+}
+
+.hh {
+ margin: auto;
+ padding: 20px;
+ background-color: rgba(255, 255, 255, 0.7);
+ border: none;
 }
 
 /* Create three unequal columns that floats next to each other */
@@ -110,10 +120,19 @@ button:active {
 }
 
 #footer {
-  background-color: #f1f1f1;
-  padding: 10px;
+  background-image: url("background.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding: 20px;
   text-align: center;
   margin: 15px;
+}
+
+.hhf {
+  background-color: #ffffff;
+  opacity: 75%;
+  padding: 5px;
+  margin: auto;
 }
 
 
@@ -124,12 +143,14 @@ button:active {
 }
 </style>
 </head>
-<body oncontextmenu="return false;">
+<!--<body oncontextmenu="return false;">-->
+<body>
 <div id="header">
+  <div class="hh">
     <h1>++ dancing stars ++</h1>
     <p>create gorgeous 2D graphics with a few clicks :)</p>
   </div>
-
+</div>
 
   <div class="column side1">
   <p>for visitors with keyboards:</p>
@@ -154,7 +175,9 @@ button:active {
 </div>
 
   <div id="footer">
+  <div class="hhf">
     <p>designed + built by Célia with P5</p>
+  </div>
   </div>
 </body>
 </html>
