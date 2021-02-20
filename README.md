@@ -7,4 +7,4 @@
 
 [word puzzle](https://celia1414.github.io/blocksofcolors/word-search-final/) slide that includes the explanation + demo for a game designed for an escape room.
 
-created by Célia TSAI (celia1414)
+- created by Célia TSAI (celia1414)
