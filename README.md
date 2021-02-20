@@ -1,6 +1,6 @@
-Works presented on github pages:
+## Works presented on github pages:
 
-Simple sketches built with P5.js/Processing
+# Simple sketches built with P5.js/Processing
 
 [random color blocks](https://celia1414.github.io/blocksofcolors/p5ColorGame/) is a game where one has to click on the blocks with different colors, testing one's eye.
 
