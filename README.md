@@ -1,4 +1,3 @@
-# Works presented on github pages: 
 
 ## Simple sketches built with P5.js/Processing
 
